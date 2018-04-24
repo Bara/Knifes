@@ -1,0 +1,78 @@
+"Phrases"
+{
+	"Choose a Knife Currently"
+	{
+		"#format"		"{1:s}"
+		"en"			"Chosse a Knife\nCurrently: {1}"
+		"de"			"Wähle ein Messer\nAktuelles: {1}"
+	}
+	
+	"Choose a Knife"
+	{
+		"en"			"Chosse a Knife:"
+		"de"			"Wähle ein Messer:"
+	}
+	
+	"T Knife"
+	{
+		"#format"		"{1:s}"
+		"en"			"{1} [T]"
+		"de"			"{1} [T]"
+	}
+	
+	"Knife Choosed"
+	{
+		"#format"		"{1:s},{2:s}"
+		"en"			"You've choosen: {green}{1}"
+		"de"			"{1} Sie haben gewählt: {green}{2}"
+	}
+
+	"Target No Permissions"
+	{
+		"#format"		"{1:s},{2:N}"
+		"en"			"{1} {green}{2} {default}has no permissions"
+		"de"			"{1} {green}{2} {default}hat keine Berechtigungen"
+	}
+
+	"No Permissions"
+	{
+		"#format"		"{1:s}"
+		"en"			"{1} You have no permissions"
+		"de"			"{1} Du hast keine Berechtigungen"
+	}
+
+	"Target Default Knife"
+	{
+		"#format"		"{1:s},{2:N}"
+		"en"			"{1} {green}{2} {default}has default knife"
+		"de"			"{1} {green}{2} {default}hat ein Standard Knife"
+	}
+
+	"Target Knife"
+	{
+		"#format"		"{1:s},{2:N},{3:s}"
+		"en"			"{1} {green}{2} {default}has {green}{3} {default}as Knife."
+		"de"			"{1} {green}{2} {default}hat {green}{3} {default}als Knife."
+	}
+
+	"Target Knife Active"
+	{
+		"#format"		"{1:s},{2:N},{3:s},{4:s}"
+		"en"			"{1} {green}{2} {default}has {green}{3} {default}as Knife. ACTIVE ein: {green}{4}"
+		"de"			"{1} {green}{2} {default}hat {green}{3} {default}als Knife. AKTIV ein: {green}{4}"
+	}
+
+	"Remaining"
+	{
+		"#format"		"{1:s},{2:d}"
+		"en"			"{1} You can use this in {green}{2} seconds{default}!"
+		"de"			"{1} Du kannst dies erst wieder in {green}{2} Sekunden {default}benutzen!"
+	}
+
+	"Remaining One"
+	{
+		"#format"		"{1:s}"
+		"en"			"{1} You can use this in {green}one second{default}!"
+		"de"			"{1} Du kannst dies erst wieder in {green}einer Sekunde {default}benutzen!"
+	}
+}

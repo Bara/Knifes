@@ -12,6 +12,7 @@
 #include <cstrike>
 #include <csgoitems>
 #include <multicolors>
+#include <autoexecconfig>
 
 #pragma newdecls required
 
@@ -69,9 +70,14 @@ public void OnPluginStart()
     RegAdminCmd("sm_aknife", Command_AKnife, ADMFLAG_ROOT);
     RegAdminCmd("sm_dknife", Command_DKnife, ADMFLAG_ROOT);
     
-    g_cMessage = CreateConVar("knifes_show_message", "1", "Show message on knife selection", _, true, 0.0, true, 1.0);
-    g_cShowDisableKnifes = CreateConVar("knifes_show_disabled_knife", "1", "Show disabled knifes (for user without flag)", _, true, 0.0, true, 1.0);
-    g_cFlag = CreateConVar("knifes_flag", "t", "Flag to get access");
+    AutoExecConfig_SetCreateDirectory(true);
+    AutoExecConfig_SetCreateFile(true);
+    AutoExecConfig_SetFile("plugin.knifes");
+    g_cMessage = AutoExecConfig_CreateConVar("knifes_show_message", "1", "Show message on knife selection", _, true, 0.0, true, 1.0);
+    g_cShowDisableKnifes = AutoExecConfig_CreateConVar("knifes_show_disabled_knife", "1", "Show disabled knifes (for user without flag)", _, true, 0.0, true, 1.0);
+    g_cFlag = AutoExecConfig_CreateConVar("knifes_flag", "t", "Flag to get access");
+    AutoExecConfig_ExecuteFile();
+    AutoExecConfig_CleanFile();
     
     HookEvent("player_spawn", Event_PlayerSpawn);
     

@@ -23,7 +23,7 @@
 	"Knife Choosed"
 	{
 		"#format"		"{1:s},{2:s}"
-		"en"			"You've choosen: {green}{1}"
+		"en"			"{1} You've choosen: {green}{2}"
 		"de"			"{1} Sie haben gewählt: {green}{2}"
 	}
 
